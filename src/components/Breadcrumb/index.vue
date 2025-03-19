@@ -83,7 +83,7 @@ watchEffect(() => {
 getBreadcrumb()
 </script>
 
-<style lang='scss' scoped>
+<style  scoped>
 .app-breadcrumb.el-breadcrumb {
   display: inline-block;
   font-size: 14px;

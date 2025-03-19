@@ -3,7 +3,7 @@
   .main-container {
     min-height: 100%;
     transition: margin-left .28s;
-    margin-left: $base-sidebar-width;
+    margin-left: var(--base-sidebar-width);
     position: relative;
   }
 
@@ -13,7 +13,7 @@
 
   .sidebar-container {
     transition: width 0.28s;
-    width: $base-sidebar-width !important;
+    width: var(--base-sidebar-width) !important;
     height: 100%;
     position: fixed;
     font-size: 0px;
@@ -25,7 +25,7 @@
     -webkit-box-shadow: 2px 0 6px rgba(0,21,41,.35);
     box-shadow: 2px 0 6px rgba(0,21,41,.35);
 
-    // reset element-ui css
+    /* // reset element-ui css */
     .horizontal-collapse-transition {
       transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
     }
@@ -78,7 +78,7 @@
       display: inline-block !important;
     }
 
-    // menu hover
+    /* // menu hover */
     .sub-menu-title-noDropdown,
     .el-sub-menu__title {
       &:hover {
@@ -87,12 +87,12 @@
     }
 
     & .theme-dark .is-active > .el-sub-menu__title {
-      color: $base-menu-color-active !important;
+      color: var(--base-menu-color-active) !important;
     }
 
     & .nest-menu .el-sub-menu>.el-sub-menu__title,
     & .el-sub-menu .el-menu-item {
-      min-width: $base-sidebar-width !important;
+      min-width: var(--base-sidebar-width) !important;
 
       &:hover {
         background-color: rgba(0, 0, 0, 0.06) !important;
@@ -101,10 +101,10 @@
 
     & .theme-dark .nest-menu .el-sub-menu>.el-sub-menu__title,
     & .theme-dark .el-sub-menu .el-menu-item {
-      background-color: $base-sub-menu-background;
+      background-color: var(--base-sub-menu-background);
 
       &:hover {
-        background-color: $base-sub-menu-hover !important;
+        background-color: var(--base-sub-menu-hover) !important;
       }
     }
   }
@@ -167,10 +167,10 @@
   }
 
   .el-menu--collapse .el-menu .el-sub-menu {
-    min-width: $base-sidebar-width !important;
+    min-width: var(--base-sidebar-width) !important;
   }
 
-  // mobile responsive
+  /* // mobile responsive */
   .mobile {
     .main-container {
       margin-left: 0px;
@@ -178,14 +178,14 @@
 
     .sidebar-container {
       transition: transform .28s;
-      width: $base-sidebar-width !important;
+      width: var(--base-sidebar-width) !important;
     }
 
     &.hideSidebar {
       .sidebar-container {
         pointer-events: none;
         transition-duration: 0.3s;
-        transform: translate3d(-$base-sidebar-width, 0, 0);
+        transform: translate3d(-var(--base-sidebar-width), 0, 0);
       }
     }
   }
@@ -199,7 +199,7 @@
   }
 }
 
-// when menu collapsed
+/* // when menu collapsed */
 .el-menu--vertical {
   &>.el-menu {
     .svg-icon {
@@ -210,12 +210,12 @@
   .nest-menu .el-sub-menu>.el-sub-menu__title,
   .el-menu-item {
     &:hover {
-      // you can use $sub-menuHover
+      /* // you can use $sub-menuHover */
       background-color: rgba(0, 0, 0, 0.06) !important;
     }
   }
 
-  // the scroll bar appears when the sub-menu is too long
+  /* // the scroll bar appears when the sub-menu is too long */
   >.el-menu--popup {
     max-height: 100vh;
     overflow-y: auto;

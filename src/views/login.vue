@@ -163,7 +163,7 @@ getCode();
 getCookie();
 </script>
 
-<style lang='scss' scoped>
+<style  scoped>
 .login {
   display: flex;
   justify-content: center;

@@ -27,7 +27,6 @@
 <script setup>
 import Logo from './Logo'
 import SidebarItem from './SidebarItem'
-import variables from '@/assets/styles/variables.module.scss'
 import useAppStore from '@/store/modules/app'
 import useSettingsStore from '@/store/modules/settings'
 import usePermissionStore from '@/store/modules/permission'
@@ -48,7 +47,7 @@ const getMenuBackground = computed(() => {
   if (settingsStore.isDark) {
     return 'var(--sidebar-bg)';
   }
-  return sideTheme.value === 'theme-dark' ? variables.menuBg : variables.menuLightBg;
+  return sideTheme.value === 'theme-dark' ? 'var(--menu-bg)' : 'var(--menu-light-bg)';
 });
 
 // 获取菜单文字颜色
@@ -56,7 +55,7 @@ const getMenuTextColor = computed(() => {
   if (settingsStore.isDark) {
     return 'var(--sidebar-text)';
   }
-  return sideTheme.value === 'theme-dark' ? variables.menuText : variables.menuLightText;
+  return sideTheme.value === 'theme-dark' ? 'var(--menu-text)' : 'var(--menu-light-text)';
 });
 
 const activeMenu = computed(() => {

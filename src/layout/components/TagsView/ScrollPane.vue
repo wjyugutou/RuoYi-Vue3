@@ -91,7 +91,7 @@ defineExpose({
 })
 </script>
 
-<style lang='scss' scoped>
+<style  scoped>
 .scroll-container {
   white-space: nowrap;
   position: relative;

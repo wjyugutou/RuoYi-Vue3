@@ -111,7 +111,7 @@ function toggleTheme() {
 }
 </script>
 
-<style lang='scss' scoped>
+<style  scoped>
 .navbar {
   height: 50px;
   overflow: hidden;

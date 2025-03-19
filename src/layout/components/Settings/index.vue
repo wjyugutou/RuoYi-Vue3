@@ -79,10 +79,6 @@
 </template>
 
 <script setup>
-import variables from '@/assets/styles/variables.module.scss'
-import axios from 'axios'
-import { ElLoading, ElMessage } from 'element-plus'
-import { useDynamicTitle } from '@/utils/dynamicTitle'
 import useAppStore from '@/store/modules/app'
 import useSettingsStore from '@/store/modules/settings'
 import usePermissionStore from '@/store/modules/permission'
@@ -146,7 +142,7 @@ defineExpose({
 })
 </script>
 
-<style lang='scss' scoped>
+<style  scoped>
 .setting-drawer-title {
   margin-bottom: 12px;
   color: var(--el-text-color-primary, rgba(0, 0, 0, 0.85));

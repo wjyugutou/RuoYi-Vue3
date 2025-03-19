@@ -146,7 +146,7 @@ watch(searchPool, (list) => {
 })
 </script>
 
-<style lang='scss' scoped>
+<style  scoped>
 .header-search {
   font-size: 0 !important;
 

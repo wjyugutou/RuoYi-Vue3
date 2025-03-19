@@ -209,7 +209,7 @@ function listToString(list, separator) {
 </script>
 
 <style scoped >
-// .el-upload--picture-card 控制加号部分
+/* // .el-upload--picture-card 控制加号部分 */
 :deep(.hide .el-upload--picture-card) {
     display: none;
 }

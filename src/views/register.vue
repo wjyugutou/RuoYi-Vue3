@@ -155,7 +155,7 @@ function getCode() {
 getCode();
 </script>
 
-<style lang='scss' scoped>
+<style  scoped>
 .register {
   display: flex;
   justify-content: center;

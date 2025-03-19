@@ -118,7 +118,7 @@ function checkboxChange(event, label) {
 
 </script>
 
-<style lang='scss' scoped>
+<style  scoped>
 :deep(.el-transfer__button) {
   border-radius: 50%;
   display: block;

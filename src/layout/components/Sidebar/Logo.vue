@@ -16,7 +16,6 @@
 <script setup>
 import logo from '@/assets/logo/logo.png'
 import useSettingsStore from '@/store/modules/settings'
-import variables from '@/assets/styles/variables.module.scss'
 
 defineProps({
   collapse: {
@@ -34,7 +33,7 @@ const getLogoBackground = computed(() => {
   if (settingsStore.isDark) {
     return 'var(--sidebar-bg)';
   }
-  return sideTheme.value === 'theme-dark' ? variables.menuBg : variables.menuLightBg;
+  return sideTheme.value === 'theme-dark' ? 'var(--menu-bg)' : 'var(--menu-light-bg)';
 });
 
 // 获取Logo文字颜色
@@ -42,12 +41,11 @@ const getLogoTextColor = computed(() => {
   if (settingsStore.isDark) {
     return 'var(--sidebar-text)';
   }
-  return sideTheme.value === 'theme-dark' ? '#fff' : variables.menuLightText;
+  return sideTheme.value === 'theme-dark' ? '#fff' : 'var(--menu-light-text)';
 });
 </script>
 
 <style  scoped>
-@import '@/assets/styles/variables.module.scss';
 
 .sidebarLogoFade-enter-active {
   transition: opacity 1.5s;

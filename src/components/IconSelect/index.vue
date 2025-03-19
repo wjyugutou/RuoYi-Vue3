@@ -58,7 +58,7 @@ defineExpose({
 })
 </script>
 
-<style lang='scss' scoped>
+<style  scoped>
    .icon-body {
     width: 100%;
     padding: 10px;
@@ -83,7 +83,9 @@ defineExpose({
             max-width: 100%;
             height: 100%;
             padding: 0 5px;
+
             &:hover {
+              
               background: #ececec;
               border-radius: 5px;
             }
